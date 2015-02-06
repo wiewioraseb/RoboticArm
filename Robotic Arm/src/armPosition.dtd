@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT main (arm+,x , y, active_joints)>
+<!ELEMENT arm (angle)>
+<!ELEMENT main (#PCDATA)>
+<!ELEMENT arm (#PCDATA)>
+<!ELEMENT angle (#PCDATA)>
+<!ELEMENT x (#PCDATA)>
+<!ELEMENT y (#PCDATA)>

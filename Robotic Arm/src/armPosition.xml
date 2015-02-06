@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE main SYSTEM "armPosition.dtd">
+<main>
+  <arm>
+    <angle>132</angle>
+  </arm>
+  <arm>
+    <angle>116</angle>
+  </arm>
+  <arm>
+    <angle>81</angle>
+  </arm>
+  <x>50</x>
+  <y>150</y>
+  <active_joints>3</active_joints>
+</main>
