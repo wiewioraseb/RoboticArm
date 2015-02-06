@@ -38,6 +38,12 @@ public class ArmModel {
 	}
 
 	public int getArmAngle(int i) {
+		
+				// atan2(x1-x,y-y1))
+		armAngle[i]= (int) Math.toDegrees(Math.atan2(getxPosition(i+1)
+				- getxPosition(i), getyPosition(i)
+				- getyPosition(i+1)));
+		
 		return armAngle[i];
 	}
 
@@ -70,7 +76,7 @@ public class ArmModel {
 	}
 
 	public void calcXandY(int startX, int startY, int index) {
-
+		// Calculates next x & y point from previous x & y point
 		this.xPosition[index] = (int) (startX + 45 * Math.cos(Math.toRadians((armAngle[index - 1] - 90))));
 		this.yPosition[index] = (int) (startY + 45 * Math.sin(Math.toRadians((armAngle[index - 1] - 90))));
 	}

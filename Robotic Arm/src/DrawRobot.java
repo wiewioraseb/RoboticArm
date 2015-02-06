@@ -61,6 +61,7 @@ public class DrawRobot extends JComponent {
 		graph222.translate(50, 50);
 		
 		AffineTransform savedTransform = graph222.getTransform();
+		//graph222.rotate(Math.toRadians(angle[0]), p[0].getX(), p[0].getY());
 		graph222.rotate(angle[0], p[0].getX(), p[0].getY());
 		graph222.draw(new Line2D.Float(p[0], p[1]));  //(new Line2D.Float(5, 15+50, 20, 15+50));
 		
@@ -69,6 +70,18 @@ public class DrawRobot extends JComponent {
 		
 		graph222.draw(new Line2D.Float(p[1], p[2]));//(new Line2D.Float(20, 15+50, 66, 66+50));
 		graph222.setTransform(savedTransform);
+		
+		
+		//AffineTransform costam = new AffineTransform();
+		//costam.setToTranslation(p[1].getX(), p[2].getY());
+		
+		//graph.draw
+		
+		// ****** AffineTransform
+		// https://www.youtube.com/watch?v=vHfGiTFWoc4
+		// https://www.youtube.com/watch?v=CA2U2dfc_yI 
+		// http://docs.oracle.com/javase/tutorial/2d/advanced/transforming.html
+		
 		
 	}
 
