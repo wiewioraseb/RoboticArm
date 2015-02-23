@@ -2,15 +2,15 @@
 <!DOCTYPE main SYSTEM "armPosition.dtd">
 <main>
   <arm>
-    <angle>132</angle>
+    <angle>90</angle>
   </arm>
   <arm>
-    <angle>116</angle>
+    <angle>90</angle>
   </arm>
   <arm>
-    <angle>81</angle>
+    <angle>90</angle>
   </arm>
-  <x>50</x>
+  <x>100</x>
   <y>150</y>
   <active_joints>3</active_joints>
 </main>
